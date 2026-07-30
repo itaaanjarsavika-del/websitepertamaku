@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Tap Kotak</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Game Tap Kotak</h1>
+    <p>Tap kotak merah sebanyak mungkin sebelum waktu habis!</p>
+
+    <div class="info">
+      <span>Skor: <strong id="score">0</strong></span>
+      <span>Waktu: <strong id="time">30</strong>s</span>
+    </div>
+
+    <button id="startBtn">Mulai Game</button>
+
+    <div id="gameArea">
+      <div id="target"></div>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+Scroll ke bawah
+Isi commit message, misalnya:
+Tambah file index.html
+Tekan Commit new file
+B. Buat file style.css
+Kembali ke halaman repository
+Tekan Add file
+Pilih Create new file
+Nama file: style.css
+Isi dengan ini:
+
+CSS
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  color: #222;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#startBtn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#gameArea {
+  width: 90vw;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+#target {
+  width: 60px;
+  height: 60px;
+  background: crimson;
+  border-radius: 12px;
+  position: absolute;
+  display: none;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+}
